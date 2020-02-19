@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.content {
+    padding-top: 90px;
+}
+
+.header {
+    background: #add8e6;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+.logo {
+    float: left;
+    font-family: "Microsoft Sans Serif";
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.nav {
+    float: right;
+}
+
