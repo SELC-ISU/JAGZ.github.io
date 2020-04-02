@@ -40,6 +40,10 @@ li {
 .nav {
     float: right;
 }
-.TitleThing{
-
+.title{
+    text-align: center;
+    margin-top: 75px;
+    font-size: 35px;
+    color: #add8e6;
+    font-family:"Microsoft Sans Serif";
 }
