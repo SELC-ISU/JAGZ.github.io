@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background: linear-gradient(lightskyblue, ghostwhite);
+    background:#add8e6;
     width: 100%;
     top: 0;
     position: fixed;
@@ -42,21 +42,18 @@ li {
 }
 h1{
     text-align: center;
-    font-size: 35px;
     color: black;
-    font-family:"Arial Black";
+    font-family: Elephant;
 }
 h2{
     text-align: left;
-    font-size: 25px;
-    color: darkslategrey;
-    font-family: "Arial Black";
+    color: black;
+    font-family: Elephant;
 }
 h3{
     text-align: left;
-    font-size: 18px;
-    color: darkslategrey;
-    font-family: "Arial Black";
+    color: black;
+    font-family: Elephant;
 }
 li{
 
