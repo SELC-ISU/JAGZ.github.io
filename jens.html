@@ -17,7 +17,18 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="alec.html">Alec</a></li>
                     <li><a href="garrett.html">Garrett</a></li>
-                    <li><a href="jens.html">Jens</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn">
+                            <a href="jens.html">Jens</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#about me">About Me</a>
+                            <a href="#countdown">Countdown to Graduation</a>
+                            <a href="#contact me">Contact Me</a>
+                            <a href="#spotify">Spotify Playlist</a>
+                        </div>
+                    </div></li>
                     <li><a href="zach.html">Zach</a></li>
                 </ul>
             </div>
@@ -31,15 +42,85 @@
     </div>
 
     <div class="container">
-        <div class="content">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <img src="JensPics/seniorpic.JPG" alt="Senior Pic" width="100%">
+    </div>
+
+    <div class="container">
+        <div class="about me" id="about me">
+            <h2>About Me</h2>
+            <p>Hi! By now I hope you've realized my name is Jens Rasmussen. I am currently finishing my second semester as a Software Engineering student at Iowa State University</p>
+            <p></p>
         </div>
     </div>
 
+    <div class="container">
+        <h2>Countdown to Graduation</h2>
+        <p id="countdown"></p>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("May 6, 2023 12:00:00").getTime();
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+                // Get today's date and time
+                var now = new Date().getTime();
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Display the result in the element with id="demo"
+                document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "Graduated!";
+                }
+            }, 1000);
+        </script>
+        <p></p>
+    </div>
+
     <div class= "container">
-        <div class="spotify">
+        <div class="spotify" id="spotify">
+            <h2>Current Spotify Playlist</h2>
             <iframe src="https://open.spotify.com/embed/playlist/6i4NymXYOFSkUZVMuP8hKt" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
+        <p></p>
+    </div>
+
+    <div class="container">
+        <div class="contact me" id="contact me">
+            <h2>Contact Me</h2>
+        </div>
+    </div>
+
+    <div class="container">
+    <div class="container2">
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
     </div>
 
 </body>
