@@ -45,7 +45,17 @@ h2{
     font-family: Elephant;
     font-size: 25px;
 }
-p{
-    font-size: 20px;
+button {
+    color: #add8e6;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid #add8e6;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
 }
+button:hover{
+    background-color: #add8e6;      color: white;
+}
+
 

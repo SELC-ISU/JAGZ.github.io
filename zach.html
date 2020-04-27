@@ -32,8 +32,39 @@
         <h2>
             <center>Zach Wingert</center>
         </h2>
+        <p><center>Here are some buttons to customize the page to your liking</center></p>
+        <button type="button"
+                onclick="changeFontSizeLarge()">Large Font
+        </button>
+        <button type="button"
+                onclick="changeFontSizeMedium()">Medium Font
+        </button>
+        <button type="button"
+                onclick="changeFontSizeSmall()">Small Font
+        </button>
+        <br />
+        <button type="button"
+                onclick="changeSans()">Sans-serif Font
+        </button>
+        <button type="button"
+                onclick="changeCursive()">Cursive Font
+        </button>
+        <button type="button"
+                onclick="changeMonospace()">Monospace Font
+        </button>
+        <br />
+        <button type="button"
+                onclick="changeBackgroundPink()">Light Pink Background
+        </button>
+        <button type="button"
+                onclick="changeBackgroundWhite()">White Background
+        </button>
+        <button type="button"
+                onclick="changeBackgroundZach()">Tennis Background
+        </button>
+
         <h2>About me</h2>
-        <p>Hello! My name is Zach Wingert. I am 19 years from Le Mars, Iowa. As of 2019-2020, I am a freshman
+        <p> Hello! My name is Zach Wingert. I am 19 years from Le Mars, Iowa. As of 2019-2020, I am a freshman
             studying software engineering at Iowa State. So far, I am loving it! This is my first taste of creating a
             website so bear with me!</p>
         <img src="ZachPics/ZachWingertPic.jpeg" alt="Picture of me" width="33%"/>
@@ -55,8 +86,49 @@
         <img src="ZachPics/ZachTennis.JPG" alt="Picture of tennis" width="33%"/>
         <img src="ZachPics/ZachXC.JPG" alt="Picture of cross country" width="33%"/>
         <img src="ZachPics/ZachRobotics.PNG" alt="Picture of robotics" width="33%"/>
-
-
+        <script>
+            var x = document.getElementsByClassName("content");
+            var i;
+            function changeFontSizeLarge() {
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.fontSize = "x-large";
+                    }
+            }
+            function changeFontSizeMedium() {
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.fontSize = "medium";
+                }
+            }
+            function changeFontSizeSmall() {
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.fontSize = "small";
+                }
+            }
+            function changeSans() {
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.fontFamily = "sans-serif";
+                }
+            }
+            function changeCursive() {
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.fontFamily = "cursive";
+                }
+            }
+            function changeMonospace() {
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.fontFamily = "monospace";
+                }
+            }
+            function changeBackgroundPink() {
+                document.body.style.background = "#FFB6C1"
+            }
+            function changeBackgroundWhite() {
+                document.body.style.background = "white"
+            }
+            function changeBackgroundZach() {
+                document.body.style.backgroundImage = "url('https://i5.walmartimages.com/asr/3e097c1a-a776-47df-8cd2-e4c2e65bc535_1.52785b542e42f04eeec56d57b43e7c93.jpeg?odnWidth=450&odnHeight=450&odnBg=ffffff')";
+            }
+        </script>
     </div>
 </div>
 
