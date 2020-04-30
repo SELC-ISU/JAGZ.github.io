@@ -1,6 +1,7 @@
 body {
     width: 100%;
     margin: 0;
+    background: #7395ae;
 }
 
 .container {
@@ -13,7 +14,7 @@ body {
 }
 
 .header {
-    background:#add8e6;
+    background:#5d5c61;
     width: 100%;
     top: 0;
     position: fixed;
@@ -40,19 +41,20 @@ li {
 .nav {
     float: right;
 }
-h1{
+h1 {
     text-align: center;
-    color: black;
+    color: white;
     font-family: Elephant;
 }
+
 h2{
     text-align: left;
-    color: black;
+    color: White;
     font-family: Elephant;
 }
 h3{
     text-align: left;
-    color: black;
+    color: white;
     font-family: Elephant;
 }
 li{
@@ -60,7 +62,7 @@ li{
 }
 p{
     font-size: 18px;
-    color: black;
+    color: white;
     font-family: Arial;
 
 }
